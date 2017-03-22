@@ -4,14 +4,14 @@ version := io.Source.fromFile("version.txt").mkString.trim
 
 organization := "TargetHolding"
 
-scalaVersion := "2.10.5"
+scalaVersion := "2.11.8"
 
 credentials += Credentials(Path.userHome / ".ivy2" / ".sbtcredentials")
 
 licenses += "Apache-2.0" -> url("http://opensource.org/licenses/Apache-2.0") 
 
 libraryDependencies ++= Seq(
-	"org.elasticsearch" %% "elasticsearch-spark" % "2.2.0-beta1"
+	"org.elasticsearch" %% "elasticsearch-spark-20" % "5.1.2"
 )
 
 spName := "TargetHolding/pyspark-elastic"
